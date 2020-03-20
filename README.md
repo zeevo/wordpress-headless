@@ -1,3 +1,5 @@
+![screenshot](./screenshot.png)
+
 # Headless Wordpress
 
 This is a useful themefor use in Jamstack applications
