@@ -1,14 +1,22 @@
 # Headless Wordpress
 
-This is a useful them for use in Jamstack applications
+This is a useful themefor use in Jamstack applications
 
 # Setup
 
-```php
-<meta content="0; URL='/wp-admin''" http-equiv"refresh">
+In `index.php` replace `$site_location` with your site's location.
+
+````php
+<?php
+
+$site_location = 'http://localhost:8000'
+
+?>
+
+<meta content="0; URL='<?php site_location ?>''" http-equiv"refresh">
 
 <!-- just in case the meta tag is not read properly, here is plan B: a JS redirect -->
 <script type="text/javascript">
-  window.location = '/wp-admin';
-</script>
-```
+  window.location = '<?php site_location ?>';
+</script>```
+````
